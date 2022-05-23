@@ -1,0 +1,51 @@
+.img {
+    background-image: url('деньги.jpg');
+}
+
+.ramka {
+	background: rgba(156, 193, 167, 0.8);
+    width: 400px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(132, 27%, 52%, 0.5);
+    padding: 3%;   
+}
+
+.header {
+    color: #070707; 
+ font: 25px Arial;
+ font-weight: bold;  
+ text-align: center;
+}
+
+
+.total-n, .header1 {
+    color: #070707; 
+    font: 14px Arial;
+    font-weight: bold;  
+  
+    padding-bottom: 15px;
+    padding-top: 15px;
+   }
+
+.input {
+    color: #080808; 
+    font: 14px Arial;
+    font-weight: bold;  
+    border-radius: 8px;
+   
+   }
+
+.total {
+    color: #080808; 
+    font: 14px Arial;
+    font-weight: bold;  
+    border-radius: 8px;
+    
+   }
+
+.colorInput {
+    background-color: #73f864;
+}

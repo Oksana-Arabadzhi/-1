@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <title>Калькулятор</title>
+        <link rel='stylesheet' type='text/css' href='calculator.css'>
+
+        
+    </head>
+    <body class="img">
+    <div class="ramka">
+        <div class="main-wrapper">
+            <h1 class="header">Калькулятор доходов и расходов</h1>
+            <div class='inputs-block-column'>
+                <div class="header1">Доход в месяц</div>
+                <div class="inputs-wrapper">
+                    <input
+                            type="number"
+                            placeholder="Основная зарплата"
+                            id="income-salary"
+                            class="input"
+                    >
+                    <input
+                            type="number"
+                            placeholder="Фриланс"
+                            id="income-freelance"
+                            class="input"
+                    >  
+                    <input
+                            type="number"
+                            placeholder="Доп. доход"
+                            id="income-extra-1"
+                            class="input"
+                    >     
+                    <input
+                            type="number"
+                            placeholder="Доп. доход"
+                            id="income-extra-2"
+                            class="input"
+                    >  
+                </div>  
+            </div>     
+            <div class="inputs-block-column">
+                <div class="header1">Обязательные расходы</div>
+                <div class="inputs-wrapper">
+                    <input
+                            type="number"
+                            placeholder="Аренда квартиры"
+                            id="costs-flat"
+                            class="input"
+                    >
+                    <input
+                            type="number"
+                            placeholder="ЖКХ"
+                            id="costs-house-services"
+                            class="input"
+                    >
+                    <input
+                            type="number"
+                            placeholder="Транспорт"
+                            id="costs-transport"
+                            class="input"
+                    >
+                    <input
+                            type="number"
+                            placeholder="Кредитные обязательства"
+                            id="costs-credit"
+                            class="input"
+                    >
+                    <input
+                            type="number"
+                            placeholder="Иные расходы"
+                            id="costs-other"
+                            class="input"
+                    >
+                </div>
+            </div>
+            <div class="inputs-block-column">
+                <div class="total-numb">
+                    <div class="total-n">Доступно в месяц (без копилки):</div>
+                    <input
+                            type="number"
+                            class="total"
+                            id="total-month"
+                            value="0"
+                            readonly>   
+                </div>
+                <div class="total-numb">
+                    <div class="total-n">Доступно в день:</div>
+                    <input
+                            type="number"
+                            class="total"
+                            id="total-day"
+                            value="0"
+                            readonly>   
+                </div>
+                <div class="total-numb">
+                <div class="total-n">Накопим за год:</div>
+                <input
+                            type="number"
+                            class="total colorInput"
+                            id="total-year"
+                            value="0"
+                            readonly> 
+            </div>
+        </div>
+    </div>
+    <div class="range-block">
+        <div class="header1">Копилка (Сколько откладываем?)</div>
+        <div class="range-wrapper">
+            <input type="range" min="0" max="100" value="0" id="money-box-range">
+        </div>
+        <div><span id="total-precents">0</span>%</div>
+    </div>
+    <div class="result-block">
+        <div class="total-numb">
+            <div class="total-n">Копим:</div>
+            <input
+                            type="number"
+                            id="accumulation"
+                            class="total"
+                            value="0"
+                            readonly> 
+        </div>
+        <div class="total-numb">
+            <div class="total-n">Тратим:</div>
+            <input type="number" id="spend" class="total" value="0" readonly>
+        </div>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</div>    
+</body>
+  
+    </html>
